@@ -1,0 +1,14 @@
+HTML Syntex
+1.tags
+<tagName>............</tagName>
+2.Element
+
+
+HTTP
+Req ---------> Server
+
+Types of HTTP Request
+1 GET  ----> Fetch
+2 POST
+3 PUT/PATCH
+4 DELETE
