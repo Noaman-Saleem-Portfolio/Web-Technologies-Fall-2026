@@ -1,0 +1,34 @@
+HTML
+
+CSS
+colors, size (height,width), Layouts, background
+
+CCS Methods 
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+CSS Selectors
+ID/Class
+1. Class (when u need to assign same styles to multiple elements)
+2.ID
+
+Separation of Conrcern
+
+Specificity of CSS
+
+Box Model
+1. Content
+2. Padding
+3. Border
+4. Margin
+5. width
+6. Height
+
+Display Property
+1. Inline
+2. Block
+3. Inline-Block
+
+FlexBox
+Responsive Layouts

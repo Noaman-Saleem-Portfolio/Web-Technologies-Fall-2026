@@ -1,0 +1,82 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.courses {
+  /* background-color: pink; */
+  /* height: 600px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 10px;
+  flex-basis: 350px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.container {
+  /* background-color: pink; */
+  /* width: 90%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin: auto; */
+}
+
+.menubar {
+  /* background-color: blue; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.menubar .links {
+  display: flex;
+  gap: 20px;
+}
+
+.menubar .links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-outer-div {
+  background-color: blue;
+}
+
+.hero {
+  height: 70vh;
+  background-color: pink;
+  background-image: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#navbarSupportedContent > ul > li > a {
+  color: red;
+}
+
+.navbar-brand {
+  color: brown;
+}
+
+.blog-h1:hover {
+  color: green;
+}
+
+/* .my-cards {
+  border: 1px solid black;
+} */
