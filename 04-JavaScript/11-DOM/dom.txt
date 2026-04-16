@@ -1,0 +1,20 @@
+DOM
+The Document Object Model (DOM) is a programming interface (API) for web documents (HTML and XML) that represents the page as a structured tree of nodes and objects. It allows languages like JavaScript to access, change, and update the content, structure, and style of a website dynamically.
+
+Key aspects of the DOM:
+-> Structure: When a browser loads a page, it converts the HTML into a hierarchical tree-like model, where each tag is a node.
+-> Manipulation: JavaScript uses the DOM to change text, modify CSS styles, add/remove elements, and respond to user actions (like clicks).
+-> Platform/Language Independent: The DOM is a W3C standard, meaning it works across different web browsers and programming languages.
+-> Structure Components: The DOM consists of the Document (file itself), Object (elements treated as objects), and Model (the tree structure).
+-> Example: Using JavaScript, you can change an element on the screen with commands like document.getElementById("myId")
+
+The DOM is essential for creating interactive and dynamic websites, turning static HTML into a manipulatable, active document. 
+
+Read about DOM from following document:
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+https://www.w3schools.com/js/js_htmldom.asp
+
+DOM Selectors:
+https://www.w3schools.com/js/js_htmldom_elements.asp
+
+
