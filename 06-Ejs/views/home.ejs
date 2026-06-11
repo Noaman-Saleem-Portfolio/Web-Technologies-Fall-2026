@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div class="container">
+      <img style="height: 200px; width: 200px;" src="images/laptop.jpg" alt="">
+      <h1>Home Page</h1>
+
+      <h2><%= studentName %></h2>
+
+      <ul>
+        <% for(let item of friends){ %>
+        <li><%= item.phone%></li>
+      <% } %>
+      </ul>
+
+      <h3>Number is <%= number %></h3>
+      <% if(number % 2 == 0){ %>
+        <h3>Even</h3>
+      <% } else { %>
+        <h3>Odd</h3>
+      <% } %>
+
+      <h3><% number % 2 ?  "Even": "Odd" %></h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        consequatur temporibus delectus porro! Id, quasi, corporis ex natus sed
+        neque aliquid enim commodi est, omnis libero facilis odio! Reiciendis,
+        enim. A quod omnis laboriosam quisquam rerum laudantium dolorem sapiente
+        suscipit natus. Odit dolore ex pariatur ad accusantium laboriosam quos
+        quod atque nulla quidem? Nobis autem voluptatem earum, quasi expedita
+        consequatur? Sed id corporis quidem, laborum saepe vel perspiciatis
+        voluptatem quod repellat, unde quae illum minima optio! Quasi unde
+        maxime eaque vero cum temporibus. Recusandae unde esse dolorem,
+        similique necessitatibus eum!
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
