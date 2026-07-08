@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Data</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div class="container">
+      <h1>Update Faculty Page</h1>
+
+      <form action="/faculty/<%= faculty._id %>?_method=put"" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="nameField"
+            name="name"
+            value="<%= faculty.name %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="employeeCode" class="form-label">Employee Code</label>
+          <input
+            type="number"
+            class="form-control"
+            id="employeeCode"
+            aria-describedby="nameField"
+            name="employeeCode"
+            value="<%= faculty.employeeCode %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            name="gender"
+          >
+            <option selected>Select Gender</option>
+            <option value="male" <%= faculty.gender === 'male' ? 'selected' : '' %>>Male</option>
+            <option value="female" <%= faculty.gender === 'female' ? 'selected' : '' %>>Female</option>
+            <option value="other" <%= faculty.gender === 'other' ? 'selected' : '' %>>Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="salary" class="form-label">Salary</label>
+          <input
+            type="number"
+            name="salary"
+            class="form-control"
+            id="salary"
+            aria-describedby="salaryField"
+            value="<%= faculty.salary %>"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
